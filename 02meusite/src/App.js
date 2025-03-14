@@ -19,7 +19,7 @@ function App() {
             <div className="card-body">
               <h5 className="card-title">Projeto 1</h5>
               <p className="card-text">Descrição de um projeto fictício.</p>
-              <a href="#" className="btn btn-outline-primary">Saiba Mais</a>
+              <button className="btn btn-outline-primary">Saiba Mais</button>
             </div>
           </div>
         </div>
@@ -28,7 +28,7 @@ function App() {
             <div className="card-body">
               <h5 className="card-title">Projeto 2</h5>
               <p className="card-text">Outro exemplo de projeto.</p>
-              <a href="#" className="btn btn-outline-primary">Saiba Mais</a>
+              <button className="btn btn-outline-primary">Saiba Mais</button>
             </div>
           </div>
         </div>
@@ -37,7 +37,7 @@ function App() {
             <div className="card-body">
               <h5 className="card-title">Projeto 3</h5>
               <p className="card-text">Mais um exemplo para teste.</p>
-              <a href="#" className="btn btn-outline-primary">Saiba Mais</a>
+              <button className="btn btn-outline-primary">Saiba Mais</button>
             </div>
           </div>
         </div>
