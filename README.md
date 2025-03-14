@@ -1,6 +1,6 @@
 # reactGrok
  
-Para criar um projeto React com o `package.json` que você forneceu, incluindo `"react": "^19.0.0"` e outras dependências específicas, vou te guiar passo a passo. Como mencionei antes, até março de 2025, a versão 19.0.0 do React ainda não existe oficialmente no npm. Isso sugere que pode ser um erro de digitação ou uma versão hipotética/futura. Vou assumir que você quer a versão mais recente disponível (ex.: `18.3.1` até agora) e ajustar o processo para que você possa substituir por `19.0.0` quando ela estiver disponível. Se você realmente quer forçar o `^19.0.0` como placeholder, eu explicarei como fazer isso também.
+Para criar um projeto React 
 
 Aqui está o passo a passo para criar o projeto:
 
@@ -20,85 +20,26 @@ O `react-scripts` no seu `package.json` indica que você está usando o **Create
 
 1. Abra o terminal e execute:
    ```bash
-   npx create-react-app meu-site
+   npx create-react-app sitebase
    ```
-   Isso cria uma pasta chamada `meu-site` com a estrutura básica do React.
+   Isso cria uma pasta chamada `sitebase` com a estrutura básica do React.
 
 2. Navegue até a pasta do projeto:
    ```bash
-   cd meu-site
+   cd sitebase
    ```
 
-#### **2. Substitua o package.json**
-O CRA gera um `package.json` padrão, mas você quer usar o seu próprio. Substitua o conteúdo do arquivo `package.json` gerado pelo seguinte (o que você forneceu):
-
-```json
-{
-  "name": "meu-site",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/dom": "^10.4.0",
-    "@testing-library/jest-dom": "^6.6.3",
-    "@testing-library/react": "^16.2.0",
-    "@testing-library/user-event": "^13.5.0",
-    "bootstrap": "^5.3.3",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
-}
-```
 
 #### **3. Instale as Dependências**
 Como você especificou versões exatas, precisamos instalar essas dependências. No terminal, dentro da pasta `meu-site`, execute:
 ```bash
 npm install
+npm i bootstrap
 ```
 
-**Nota sobre React 19.0.0:**
-- Até março de 2025, o npm não tem a versão `19.0.0` do `react` ou `react-dom`. Ao rodar `npm install`, você verá um erro como:
+
   ```
-  No matching version found for react@^19.0.0
-  ```
-- **Solução Temporária:** Substitua `"react": "^19.0.0"` e `"react-dom": "^19.0.0"` por `"react": "^18.3.1"` e `"react-dom": "^18.3.1"` (a mais recente até agora). Quando a 19.0.0 for lançada, você pode atualizar manualmente. O `package.json` ajustado ficaria assim:
-```json
-"dependencies": {
-  "@testing-library/dom": "^10.4.0",
-  "@testing-library/jest-dom": "^6.6.3",
-  "@testing-library/react": "^16.2.0",
-  "@testing-library/user-event": "^13.5.0",
-  "bootstrap": "^5.3.3",
-  "react": "^18.3.1",
-  "react-dom": "^18.3.1",
-  "react-scripts": "5.0.1",
-  "web-vitals": "^2.1.4"
-}
+
 ```
 
 Rode novamente `npm install` após ajustar.
