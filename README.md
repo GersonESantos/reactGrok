@@ -70,7 +70,21 @@ root.render(
 );
 
 reportWebVitals();
+
 ```
+#### **6. Adicione o Bootstrap**
+Seu `package.json` inclui o Bootstrap.  `public/index.html`
+
+
+
+```bash
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://gersonesantos.github.io/pisico/style.css">
+```
+
+
+
 
 #### **6. Crie um Componente Simples**
 Para testar, substitua o conteúdo de `src/App.js` por um exemplo usando Bootstrap:
